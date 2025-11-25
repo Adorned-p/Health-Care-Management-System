@@ -1,154 +1,131 @@
-# Health-Care-Management-System
+#  Online Health Care Management System
 
-A web-based healthcare management platform built using **Java Servlets, JSP, and JDBC**.  
-The system enables **patients** to book appointments, **doctors** to manage schedules and records, and **administrators** to oversee operations—all through dedicated dashboards.
+This repository contains the frontend code for the **Online Healthcare Management System**, built using modern JavaScript tools. The project includes reusable components, UI pages, and functionality required for the healthcare portal.
 
 ---
 
-## ✅ Features
+##  Project Structure
 
-###  Admin
-- Manage users (create/update/delete)
-- Oversee appointment scheduling
-- Update system settings
-- View performance and usage analytics
+```
+Hospital/
+├── cards_compo/          # UI card components
+├── function/             # JS logic & helper functions
+├── ui_project/           # UI pages and layouts
+├── node_modules/         # Dependencies
+├── package.json          # Project metadata & dependencies
+└── package-lock.json     # Dependency lockfile
+```
 
-###  Doctor
-- Manage availability schedules
-- Access/update patient medical records
-- Confirm or update appointments
-- View patient feedback
+---
 
-###  Patient
-- Book, reschedule, and cancel appointments
-- View medical history
-- Manage personal profile
-- Track appointment history
+##  Features (Frontend Only)
+
+- User-friendly interfaces for:
+  - Patients  
+  - Doctors  
+  - Admins  
+- Components for appointments, profiles, dashboards
+- Organized UI layout stored in `ui_project`
+- Reusable components inside `cards_compo`
+- Helper functions inside `function` folder
 
 ---
 
 ##  Tech Stack
 
-### **Backend**
-- Java Servlets & JSP
-- JDBC for database connectivity
-- Servlet container: **Apache Tomcat**
-
-### **Database**
-- MySQL
-- Tables such as:
-  - `users`
-  - `appointments`
-  - `patient_records`
-  - `feedback`
-
-### **Frontend**
-- React, Tailwind, React router 
-
-- JSP for dynamic pages
+- **JavaScript**
+- **Node.js**
+- **npm**
+- HTML, CSS (inside components)
+- React-like component structure (if React is used — modify as needed)
 
 ---
 
 ##  Installation & Setup
 
-### ✅ Prerequisites
-- JDK 17 (or preferred version)
-- Apache Tomcat 9/10
-- MySQL Server
-- IDE: Eclipse / IntelliJ / NetBeans
+### 1️⃣ Install Node.js  
+Make sure Node.js & npm are installed.
 
----
-
-### 🔹 1. Clone the Repository
+Check version:
 ```bash
-https://github.com/Adorned-p/Health-Care-Management-System.git
-cd online-healthcare-management
+node -v
+npm -v
 ```
 
 ---
 
-### 🔹 2. Configure Database (MySQL)
+### 2️⃣ Install Dependencies
 
-Create database:
-```sql
-CREATE DATABASE healthcare_db;
-```
+Inside the `Hospital` folder, run:
 
-Import schema:
-```sql
-source database/schema.sql;
+```bash
+npm install
 ```
 
-Update DB credentials in:
-```
-/src/main/java/com/app/util/DBConnection.java
-```
-
-Example:
-```java
-private static final String URL = "jdbc:mysql://localhost:3306/healthcare_db";
-private static final String USER = "root";
-private static final String PASSWORD = "yourpassword";
-```
+This installs everything listed in `package.json`.
 
 ---
 
-### 🔹 3. Deploy on Tomcat
+### 3️⃣ Start the Project
 
-#### Using Eclipse:
-1. File → Import → Dynamic Web Project
-2. Add project to Tomcat server
-3. Run → Run on Server
+If a start script exists in `package.json`, run:
 
-App URL:
+```bash
+npm start
 ```
-http://localhost:8080/healthcare
+
+Typical URLs:
 ```
+http://localhost:3000/
+```
+
+If there is no start script, manually open HTML files from the `/ui_project` folder in the browser.
 
 ---
 
-##  Folder Structure
+##  Scripts
 
-```
-project-root/
-├── src/
-│   ├── com.app.controller/   # Servlets
-│   ├── com.app.dao/          # JDBC data access
-│   ├── com.app.model/        # POJO classes
-│   ├── com.app.util/         # DB connection helper
-├── WebContent/
-│   ├── views/                # JSP pages
-│   ├── assets/               # CSS/JS/images
-│   └── WEB-INF/
-│       └── web.xml           # Servlet configuration
-├── database/
-│   └── schema.sql
-└── README.md
+Run available npm scripts using:
+```bash
+npm run <script-name>
 ```
 
----
-
-##  Usage
-
-### Login roles:
-- **Admin** → manage all users & appointments
-- **Doctor** → view/update schedules & patient records
-- **Patient** → book & manage appointments
+Check all scripts in `package.json`.
 
 ---
 
-##  Future Enhancements
+##  How to Modify
 
-- Email/SMS notifications
-- Prescription uploads
-- Role-based authentication filters
-- Pagination & search in dashboards
-- REST API integration
+### Components (`/cards_compo`)
+Add or update UI card components here.
+
+### Functions (`/function`)
+Place reusable JavaScript logic here.
+
+### UI Pages (`/ui_project`)
+Edit main pages, layouts, and templates.
 
 ---
 
-##  Contribution
+##  Requirements
 
-1. Fork the repo  
-2. Create a feature branch  
-3. Submit a pull request 
+- Node.js 16+
+- npm 8+
+- Browser (Chrome recommended)
+- Code editor (VS Code recommended)
+
+---
+
+##  Contributing
+
+1. Fork this repo  
+2. Create a new branch  
+3. Make your updates  
+4. Submit a pull request  
+
+---
+
+##  License
+
+This project is for learning and development use.
+
