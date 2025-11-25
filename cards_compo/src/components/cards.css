@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards{
+    width: 250px;
+    /* background: white; */
+    height: 300px;
+    color: black;
+    /* border: 1px solid white; */
+    border-radius:15px ;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.part1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+.part1 .logo{
+    width: 25%;
+    border-radius: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.part1 .save{
+    width: 30%;
+    /* border-radius: 50%; */
+    height: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.part1 .save button{
+    background: none;
+    width: 100%;
+    /* border-radius: 50%; */
+    height: auto;
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    background: rgba(0, 0, 0, 0.177);
+    /* border: 1px solid black; */
+}
+.part2{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid white; */
+}
+.part2 h1{
+    font-size: 23px;
+}
+.part2 h2{
+    font-size: 17px;
+}
+.part2 h2 span{
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 50%;
+}
+.parttime{
+    margin-top: 10px;
+    width: 70%;
+    /* background: rgba(255, 255, 255, 0.263); */
+    display: flex;
+    justify-content: space-between;
+}
+.parttime p{
+   width: auto;
+   padding: 0px 10px;
+   text-align: center;
+   background: rgba(0, 0, 0, 0.168);
+    /* border: 1px solid black; */
+    border-radius: 2px;
+    font-size: 10px;
+}
+.part3{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    padding-top: 8px;
+    border-top: 1px solid rgba(0, 0, 0, 0.644);
+}
+.pay{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.pay h2{
+    font-size: 18px;
+}
+.pay p{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.856);
+}
+.apply {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: end;
+    /* border: 1px solid black; */
+}
+.apply button{
+    width: 90%;
+    height: auto;
+    margin-top: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    
+    /* border: 1px solid black; */
+}
